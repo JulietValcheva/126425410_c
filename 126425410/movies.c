@@ -108,7 +108,7 @@ void addMovie() {
 
     printf("Genre: ");
     fgets(m.genre, sizeof(m.genre), stdin);
-    m.genre[strcspn(m.genre, "\n")] = '\0';
+    m.genre[strcspn(m.genre, "\n")] = '\0';// Премахване на нов ред
 
     printf("Year: ");
     scanf("%d", &m.year);
@@ -141,7 +141,7 @@ void viewMovies() {
         printf("No movies available.\n");
         return;
     }
-
+ // Обхождаме масива и печатаме всеки филм
     for (int i = 0; i < movieCount; i++) {
         printf("\nID: %d\n", movies[i].id);
         printf("Title: %s\n", movies[i].title);
@@ -162,7 +162,7 @@ void searchMovie() {
     title[strcspn(title, "\n")] = '\0';
 
     for (int i = 0; i < movieCount; i++) {
-        if (strcmp(movies[i].title, title) == 0) {
+        if (strcmp(movies[i].title, title) == 0) { // Сравняваме заглавията
             printf("Found: %s (%d)\n", movies[i].title, movies[i].year);
             found = 1;
         }
@@ -171,7 +171,7 @@ void searchMovie() {
     if (!found)
         printf("Movie not found.\n");
 }
-
+/* И двете сортирания са чрез Bubble sort */
 /* Сортиране по продължителност */
 void sortByDuration() {
     for (int i = 0; i < movieCount - 1; i++)

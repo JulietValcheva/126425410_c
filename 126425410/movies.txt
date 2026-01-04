@@ -1,0 +1,5 @@
+5;1984;sci-fi;1984;9.0;115
+1;Inception;action;2010;8.0;148
+3;Avatar;sci-fi;2009;7.9;163
+2;Zootopia 2;animation;2025;7.0;98
+4;It;horror;2017;6.9;135

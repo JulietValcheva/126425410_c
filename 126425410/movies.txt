@@ -3,3 +3,4 @@
 3;Avatar;sci-fi;2009;7.9;163
 2;Zootopia 2;animation;2025;7.0;98
 4;It;horror;2017;6.9;135
+6;Barbie;drama;2024;6.6;114
